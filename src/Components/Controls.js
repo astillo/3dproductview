@@ -7,14 +7,14 @@ class Controls extends Component {
 
 
   render() {
-    return (       
-        <div className="controls" >
+    return (
+      <div className="controls" >
         {/* We are going to take our options as an array of props.*/}
-        {this.props.options.map( (option, cnt) =>  {
-          {/* We'll render an inidvidual control for each item in the array */}
+        {this.props.options.map((option, cnt) => {
+          {/* We'll render an inidvidual control for each item in the array */ }
           return <ProductOptionControl key={option} optionName={option} optionValues={this.props.optionValues[cnt]} />
         })}
-        </div>        
+      </div>
     )
   }
 }
